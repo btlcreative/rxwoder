@@ -1,0 +1,25 @@
+.DS_Store
+.sass-cache
+
+Icon
+Thumbs.db
+*.settings
+*.project
+
+# Ignore configuration files that may contain sensitive information.
+html/mysite/_config.php
+html/mysite/_config/config.yml
+html/mysite/_config/
+
+# Ignore paths that contain user-generated content.
+html/assets/
+
+# Ignore the htaccess because the site may have some custom config
+/.htaccess
+
+
+# Extra Folders to ignore
+/working
+/notes
+/backups
+html/cache
