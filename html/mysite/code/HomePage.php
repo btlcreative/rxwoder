@@ -3,7 +3,7 @@ class HomePage extends Page {
 
 	private static $allowed_children = array("GridPage");
 
-  public function getCMSFields() {
+    public function getCMSFields() {
     $fields = parent::getCMSFields();
     return $fields;
   }

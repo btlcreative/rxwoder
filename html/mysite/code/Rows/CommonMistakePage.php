@@ -2,7 +2,7 @@
 class CommonMistakePage extends GridPage {
 
 	private static $icon = 'mysite/img/4-8.png';
-  private static $description = 'Grid row, intended for Image 33% width and 66% Content Area width';
+    private static $description = 'Grid row, intended for Image 33% width and 66% Content Area width';
 
 	private static $db = array(
 		'RowText' => 'HTMLText'

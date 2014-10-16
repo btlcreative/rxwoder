@@ -41,18 +41,7 @@
 	</footer> --%>
 
 
-
-	<section class="row">
-		<div class="large-8 large-centered columns">
-			<%-- <ul class="inline-list" style="text-align: center"> --%>
-			<ul style="text-align: center">
-				<li style="display: inline-block; padding: 0 10px;"><a href="#">Privacy Policy</a></li>
-				<li style="display: inline-block; padding: 0 10px;"><a href="#">Terms of Use</a></li>
-				<li style="display: inline-block; padding: 0 10px;"><a href="#">Contact</a></li>
-				<li style="display: inline-block; padding: 0 10px;"><a href="#">Social Media</a></li>
-			</ul>
-		</div>
-	</section>
+	<% include Footer %>
 
 	<%--Login Modal--%>
 	<div id="login-form-modal" class="reveal-modal medium" data-reveal>

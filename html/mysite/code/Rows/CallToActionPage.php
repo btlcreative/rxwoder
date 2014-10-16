@@ -2,7 +2,7 @@
 class CallToActionPage extends GridPage {
 
 	private static $icon = 'mysite/img/cta.png';
-  private static $description = 'Call to action row';
+    private static $description = 'Call to action row';
 
 	private static $db = array(
 		'CTAText' => 'Text',

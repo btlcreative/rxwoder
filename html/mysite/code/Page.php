@@ -6,7 +6,11 @@ class Page extends SiteTree {
 
 	private static $has_one = array(
 	);
-
+	
+	public function NavItems($navType) {
+	  $navItems = DataObject::get($navType);
+	  return $navItems;
+	}
 }
 class Page_Controller extends ContentController {
 

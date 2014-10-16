@@ -2,7 +2,7 @@
 class GridPage extends Page {
 
 	private static $allowed_children = 'none';
-  private static $can_be_root = false;
+    private static $can_be_root = false;
 
 	private static $db = array(
 		'isRow' => 'Boolean'
