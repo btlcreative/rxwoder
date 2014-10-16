@@ -1,5 +1,5 @@
 <?php
-class Grid48Page extends GridPage {
+class CommonMistakePage extends GridPage {
 
 	private static $icon = 'mysite/img/4-8.png';
   private static $description = 'Grid row, intended for Image 33% width and 66% Content Area width';
@@ -29,7 +29,7 @@ class Grid48Page extends GridPage {
   }
 }
 
-class Grid48Page_Controller extends Page_Controller {
+class CommonMistakePage_Controller extends Page_Controller {
 
 	public function index() {
 		Director::direct($this->Parent()->Link());
