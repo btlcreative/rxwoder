@@ -32,15 +32,6 @@
 		$Layout
 	</div>
 
-<%-- 	<footer class="footer" role="contentinfo">
-		<div class="row">
-			<div class="large-12 columns">
-				<p>&copy; $Now.Year $SiteConfig.Title</p>
-			</div>
-		</div>
-	</footer> --%>
-
-
 	<% include Footer %>
 
 	<%--Login Modal--%>
