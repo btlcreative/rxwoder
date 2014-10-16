@@ -1,5 +1,5 @@
 <?php
-class Grid633Page extends GridPage {
+class DetailSummaryPage extends GridPage {
 
 	private static $icon = 'mysite/img/6-3-3.png';
 	private static $description = 'Grid row, intended for one 50% and two 25% Content Area widths';
@@ -36,7 +36,7 @@ class Grid633Page extends GridPage {
   }
 }
 
-class Grid633Page_Controller extends Page_Controller {
+class DetailSummaryPage_Controller extends Page_Controller {
 
 	public function index() {
 		// die(Director::redirect());
