@@ -3,6 +3,10 @@ class GridPage extends Page {
 
 	private static $allowed_children = 'none';
   private static $can_be_root = false;
+  // private static $allowed_children = array('none');
+	// private static $can_be_root = false;
+	private static $defaults = array('ShowInMenus' => 0);
+
 
 	private static $db = array(
 		'isRow' => 'Boolean'
