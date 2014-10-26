@@ -28,16 +28,16 @@
 			}
 
 			div {
-				font-family: "HelveticaNeue-Regular, Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-				font-style: italic;
-				color: #fff;
+				// h4{
+					color: #fff;
 
-				&:before {
-					content: "\201C";
-				}
-				&:after {
-					content: "\201D";
-				}
+					&:before {
+						content: "\201C";
+					}
+					&:after {
+						content: "\201D";
+					}
+				// }
 			}
 	 	}
 	}

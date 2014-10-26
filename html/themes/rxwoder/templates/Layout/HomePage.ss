@@ -14,7 +14,9 @@
 		<article>
 			<%-- <span class="icon-facebook-square"></span> --%>
 			<div>
-				<% if $Message %>$Message<% end_if %>
+				<%-- <h4> --%>
+				$Message
+				<%-- </h4> --%>
 			</div>
 		</article>
 
