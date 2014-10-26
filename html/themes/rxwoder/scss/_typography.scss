@@ -2,9 +2,8 @@
 h1, h2, h3, h4 {
 	font-weight: 900;
 }
-h1 {
+h1 {}
 
-}
 h2 {
 	font-size: 3.0em;
 	text-transform: uppercase;
@@ -30,15 +29,14 @@ p {
 	line-height: rem(28px);
 
 	font-family: $body-font-family;
-
 	color: $body-font-color;
 
 	// spacing
 
 	&.deck {
-		font-size: rem(24px);
-		color: $dark-grey;
-		line-height: rem(28px);
+		font-size: emCalc(24px);
+		// color: $dark-grey;
+		line-height: emCalc(30px);
 	}
 }
 
@@ -59,5 +57,40 @@ ol {
 	// list-style-type
 	li {
 
+	}
+}
+
+blockquote {
+	border-left: 4px solid $orange;
+	margin: 2em 0;
+
+	p {
+		font-size: emCalc(24px);
+		line-height: emCalc(30px);
+		color: $orange;
+		font-style: italic;
+
+
+		&:before {
+			content: "\201C";
+		}
+
+		&:after {
+			content: "\201D";
+		}
+	}
+}
+
+img {
+	&.left {
+		float: left;
+		margin: 0 1.5em 0.5em 0;
+		// clear: left;
+	}
+
+	&.right {
+		float: right;
+		margin: 0 0 0.5em 1.5em;
+		// clear: left;
 	}
 }

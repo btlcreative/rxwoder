@@ -1,6 +1,10 @@
 @import "settings";
-@import "foundation";
+// @import "foundation";
+@import "typography";
+// @import "foundation";
 
-.typography {
+#tinymce.mceContentBody.typography {
     padding: 18px 20px;
+    font-size: 1em;
+    max-width: 720px;
 }

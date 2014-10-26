@@ -5,8 +5,20 @@ class Page extends SiteTree {
 	);
 
 	private static $has_one = array(
+		'HeaderImage' => 'Image'
 	);
-	
+
+	function getCMSFields() {
+		$fields = parent::getCMSFields();
+
+		$fields->addFieldToTab('Root.Main',	$eventImage = new UploadField('HeaderImage', 'Page Header Image<br>(optional)'), 'Content');
+		$eventImage->allowedExtensions = array('jpg', 'jpeg', 'png', 'gif');
+		$eventImage->setFolderName('Page-Images');
+
+		return $fields;
+
+	}
+
 	public function NavItems($navType) {
 	  $navItems = DataObject::get($navType);
 	  return $navItems;

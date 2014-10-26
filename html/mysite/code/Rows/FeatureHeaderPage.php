@@ -20,8 +20,8 @@ class FeatureHeaderPage extends GridPage {
 		$imagefield->allowedExtensions = array('jpg', 'jpeg', 'png', 'gif');
 		$imagefield->setFolderName('Images');
 
-		$fields->addFieldToTab('Root.Main', new HTMLEditorField('RowText', 'Text Area'), 'Content');
 		$fields->addFieldToTab('Root.Main', $imagefield, 'Content');
+		$fields->addFieldToTab('Root.Main', new HTMLEditorField('RowText', 'Text Area'), 'Content');
 
 		$fields->removeByName('Content');
 

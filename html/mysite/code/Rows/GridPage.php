@@ -16,6 +16,8 @@ class GridPage extends Page {
 
   public function getCMSFields() {
     $fields = parent::getCMSFields();
+
+    $fields->removeByName('HeaderImage');
     return $fields;
   }
 

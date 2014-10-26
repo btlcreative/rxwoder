@@ -14,7 +14,7 @@
     #logo {
         svg {
             margin: 8px 0;
-            fill: $red;
+            fill: #FFF;
         }
     }
 
@@ -34,15 +34,9 @@
                     font-family: $header-font-family;
                     font-weight: 800;
                     font-size: 1.25em;
-                    color: $red;
+                    color: #FFF;
                 }
             }
         }
     }
-
-    .HomePage & {
-        #logo svg {fill: #FFF;}
-        nav ul li a {color: #FFF;}
-    }
-
 }
