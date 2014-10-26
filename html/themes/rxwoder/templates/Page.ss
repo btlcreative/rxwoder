@@ -19,14 +19,14 @@
 	<%--See [Requirements](http://doc.silverstripe.org/framework/en/reference/requirements) for loading from controller--%>
 	<link rel="stylesheet" href="$ThemeDir/css/app.css" />
 	<script src="$ThemeDir/bower_components/modernizr/modernizr.js"></script>
+	<%-- <script src="//use.typekit.net/qcd1rgg.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> --%>
+	<link href='http://fonts.googleapis.com/css?family=Russo+One|Open+Sans:400italic,400,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body class="$ClassName.ATT">
 
-	<header class="header" role="banner">
-		<div class="fixed contain-to-grid">
 			<% include TopBar %>
-		</div>
-	</header>
+		
 
 	<div class="main typography" role="main">
 		$Layout

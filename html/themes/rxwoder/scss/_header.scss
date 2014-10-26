@@ -1,0 +1,41 @@
+.header {
+    background: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    
+    .hidden {
+        display: none;
+        visibility: hidden;
+    }
+
+    #logo {
+        svg {
+            margin: 8px 0;
+        }
+    }
+
+    nav {
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            float: right;
+            li {
+                float: left;
+                a {
+                    display: block;
+                    padding: 1em 1em;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-family: $header-font-family;
+                    font-weight: 800;
+                    font-size: 1.25em;
+                }
+            }
+        }
+    }
+}
