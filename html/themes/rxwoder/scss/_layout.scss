@@ -5,4 +5,9 @@
 
 .request {
 	text-align: center;
+
+	.button {
+		font-family: $header-font-family;
+		text-transform: uppercase;
+	}
 }
