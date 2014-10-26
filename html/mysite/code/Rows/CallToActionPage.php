@@ -2,10 +2,12 @@
 class CallToActionPage extends GridPage {
 
 	private static $icon = 'mysite/img/cta.png';
-    private static $description = 'Call to action row';
+  private static $description = 'Call to action row';
+  private static $defaults = array("ShowInMenus" => 0);
 
 	private static $db = array(
 		'CTAText' => 'Text',
+		'CTATextArea' => 'Text',
 		'ButtonText' => 'Text'
 	);
 
@@ -17,7 +19,8 @@ class CallToActionPage extends GridPage {
 
     $fields = parent::getCMSFields();
 
-		$fields->addFieldToTab('Root.Main', new TextField('CTAText', 'Call to Action Text'), 'Content');
+		$fields->addFieldToTab('Root.Main', new TextField('CTAText', 'Call to Action Header'), 'Content');
+		$fields->addFieldToTab('Root.Main', new TextareaField('CTATextArea', 'Call to Action Text'), 'Content');
 		$fields->addFieldToTab('Root.Main', new TextField('ButtonText', 'Button Text'), 'Content');
 
 		$buttonLinkTree = new TreeDropdownField('ButtonLinkID', 'Button Link', 'SiteTree');
