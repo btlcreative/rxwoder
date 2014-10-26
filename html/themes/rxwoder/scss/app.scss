@@ -1,5 +1,8 @@
 @import "settings";
 @import "foundation";
+
+@import "fonts";
+
 @import "layout";
 @import "typography";
 
@@ -8,25 +11,11 @@
 
 @import "header";
 @import "common-mistake";
-// @import "feature-header";
-
-.main {
-	min-height: 320px;
-}
+@import "social-feeds";
 
 
-// h1, h2, h3 {font-family: Georgia, serif !important;}
+// .main {
+// 	min-height: 320px;
+// }
 
-section{
 
-	&.photos {
-		padding: 0;
-		img {
-			@media screen and (min-width: 1000px) {
-				width: 25%;
-			}
-			width: 50%;
-			float: left;
-		}
-	}
-}

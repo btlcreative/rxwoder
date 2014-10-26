@@ -17,6 +17,9 @@
 	<% end_if %>
 	<link rel="icon" type="image/png" href="$ThemeDir/favicon.ico" />
 	<%--See [Requirements](http://doc.silverstripe.org/framework/en/reference/requirements) for loading from controller--%>
+
+	<link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
+
 	<link rel="stylesheet" href="$ThemeDir/css/app.css" />
 	<script src="$ThemeDir/bower_components/modernizr/modernizr.js"></script>
 	<%-- <script src="//use.typekit.net/qcd1rgg.js"></script>
@@ -31,8 +34,8 @@
 	<div class="main typography" role="main">
 		$Layout
 	</div>
-
 	<% include Footer %>
+
 
 	<%--Login Modal--%>
 	<div id="login-form-modal" class="reveal-modal medium" data-reveal>

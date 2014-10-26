@@ -1,0 +1,53 @@
+.facebook {
+
+	min-height: 200px;
+	background: image_url('bg.jpg') no-repeat center left;
+	-webkit-background-size: cover;
+	background-size: cover;
+
+	.message {
+		height: 200px;
+
+		article {
+			// Control vertically aligning
+			position: relative;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+
+
+			// Default sizing
+			font-size: 2em;
+			text-align: center;
+
+			span {
+				color: $red;
+				font-weight: normal;
+				display: block;
+			}
+
+			div {
+				font-family: "HelveticaNeue-Regular, Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+				font-style: italic;
+				color: #fff;
+
+				&:before {
+					content: "\201C";
+				}
+				&:after {
+					content: "\201D";
+				}
+			}
+	 	}
+	}
+
+}
+
+.instagram {
+	@include clearfix;
+
+	color: $red;
+	font-weight: normal;
+	font-size: 1.6em;
+}
