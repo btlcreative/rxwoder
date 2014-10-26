@@ -1,6 +1,11 @@
 .CommonMistakePage {
   background: $red image_url('dave-bg-wide.png') no-repeat center center;
   background-size: cover;
+  @media #{$small-only} {
+    background-size: 201%;
+    background-position: left -40%;
+    padding-top: 55%;
+  }
 
   h2, h3, p {
       color: #fff;
