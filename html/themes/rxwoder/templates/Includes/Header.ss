@@ -1,6 +1,6 @@
 <header class="header">
 	<div class="row">
-		<div class="large-2 columns">
+		<div class="large-2 small-6 columns">
 			<a href="{$baseUrl}" id="logo">
 				<span class="hidden">$SiteConfig.Title</span>
 				<?xml version="1.0" encoding="utf-8"?>
@@ -67,8 +67,22 @@
 			</a>
 
 		</div>
-		<div class="large-10 columns">
-			<nav>
+		<div class="large-10 small-6 columns">
+			<a href="#" class="menu-toggle hide-for-large-up">
+				<?xml version="1.0" encoding="utf-8"?>
+				<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+				<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+				<g>
+					<path d="M0,8.5c0-1.6,1.3-2.9,2.9-2.9h34.4c1.6,0,2.9,1.3,2.9,2.9c0,1.5-1.3,2.9-2.9,2.9H2.9C1.3,11.4,0,10,0,8.5z M40.1,20
+						c0,1.5-1.3,2.9-2.9,2.9H2.9C1.3,22.9,0,21.5,0,20c0-1.6,1.3-2.9,2.9-2.9h34.4C38.8,17.1,40.1,18.4,40.1,20z M40.1,31.5
+						c0,1.5-1.3,2.9-2.9,2.9H2.9c-1.6,0-2.9-1.4-2.9-2.9c0-1.6,1.3-2.9,2.9-2.9h34.4C38.8,28.6,40.1,29.9,40.1,31.5z"/>
+				</g>
+				</svg>
+
+			</a>
+			<nav class="show-for-large-up">
 			<ul>
 				<% loop Menu(1) %>
 			<li class="<% if $LinkingMode == "current" || $LinkingMode == "section" %>active<% end_if %><% if $Children %> has-dropdown<% end_if %>">

@@ -11,6 +11,9 @@ class Page extends SiteTree {
 	  $navItems = DataObject::get($navType);
 	  return $navItems;
 	}
+	public function NavPercent($total) {
+		return 100/$total;
+	}
 }
 class Page_Controller extends ContentController {
 
