@@ -1,30 +1,18 @@
 @import "settings";
 @import "foundation";
+
+@import "fonts";
+
 @import "layout";
 @import "typography";
 
 @import "feature-header";
 @import "detail-summary";
+@import "social-feeds";
 // @import "feature-header";
-// @import "feature-header";
 
-.main {
-	min-height: 320px;
-}
+// .main {
+// 	min-height: 320px;
+// }
 
 
-// h1, h2, h3 {font-family: Georgia, serif !important;}
-
-	section{
-
-		&.photos {
-			padding: 0;
-			img {
-				@media screen and (min-width: 1000px) {
-					width: 25%;
-				}
-				width: 50%;
-				float: left;
-			}
-		}
-	}

@@ -1,8 +1,8 @@
 <?php
 class BioPage extends Page {
 
-	private static $db = array(
-	);
+	private static $db = array();
+	private static $allowed_children = array("GridPage");
 
   public function getCMSFields() {
     $fields = parent::getCMSFields();

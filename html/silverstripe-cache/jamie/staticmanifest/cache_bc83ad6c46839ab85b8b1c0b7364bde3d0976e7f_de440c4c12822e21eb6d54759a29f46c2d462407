@@ -1,0 +1,1 @@
+a:1:{s:11:"SocialFeeds";a:1:{s:2:"db";a:2:{s:6:"access";i:343;s:5:"value";a:7:{s:10:"SourceName";s:12:"varchar(200)";s:8:"SourceID";s:12:"varchar(200)";s:9:"SourceURL";s:4:"Text";s:7:"Message";s:4:"Text";s:6:"Posted";s:11:"SS_Datetime";s:5:"Likes";s:3:"Int";s:10:"PictureURL";s:4:"Text";}}}}
