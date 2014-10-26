@@ -28,8 +28,9 @@
 </head>
 <body class="$ClassName.ATT">
 
-			<% include TopBar %>
-		
+	<% include OffCanvasNav %>
+
+	<% include Header %>
 
 	<div class="main typography" role="main">
 		$Layout

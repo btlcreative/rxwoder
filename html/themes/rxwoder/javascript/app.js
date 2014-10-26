@@ -6,3 +6,9 @@ $(document).foundation();
 $('#start-jr').on('click', function() {
 	$(document).foundation('joyride','start');
 });
+
+$('.menu-toggle').click(function (e) {
+    $('body').toggleClass("open");
+    e.preventDefault();
+    return false;
+})

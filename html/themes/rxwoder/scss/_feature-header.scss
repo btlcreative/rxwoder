@@ -1,15 +1,16 @@
 .FeatureHeaderPage {
-	padding: 16em 0 12em 0;
+	padding: 10em 0 8em 0;
 	background-color: #000;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center bottom;
+    min-height: 600px;
     h2 {
-        font-size: 5em;
+        font-size: 4em;
     }
 
     h3 {
         color: rgba(#fff, 0.85);
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 }
