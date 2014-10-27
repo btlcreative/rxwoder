@@ -5,12 +5,25 @@
 	background-repeat: no-repeat;
 	background-position: center bottom;
     min-height: 600px;
+
+    @media #{$small-only} {
+        padding-bottom: 70%;
+        background-size: 170%;
+        background-position: 80% bottom;
+    }
+
     h2 {
         font-size: 4em;
+        @media #{$small-only} {
+            font-size: 3.5em;
+        }
     }
 
     h3 {
         color: rgba(#fff, 0.85);
         font-size: 1.4em;
+        @media #{$small-only} {
+            font-size: 1.2em;
+        }
     }
 }
