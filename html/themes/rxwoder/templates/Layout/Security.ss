@@ -1,7 +1,8 @@
-<section class="row">
-	<div class="large-6 large-centered columns">
-		<article>
+<section class="FeatureHeaderPage">
+	<div class="row">
+		<div class="large-6 large-centered columns">
+			<h2>$Title</h2>
 			$Form
-		</article>
+		</div>
 	</div>
 </section>

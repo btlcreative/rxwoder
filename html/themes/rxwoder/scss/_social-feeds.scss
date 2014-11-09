@@ -29,7 +29,10 @@
 
 			div {
 				// h4{
-					color: #fff;
+					color: rgba(#fff, 0.8);
+					font-size: 0.8em;
+					line-height: 1.2em;
+					font-style: italic;
 
 					&:before {
 						content: "\201C";

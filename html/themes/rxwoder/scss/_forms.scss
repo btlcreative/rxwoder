@@ -1,0 +1,21 @@
+form {
+	fieldset {
+		border: 1px solid rgba(#ddd, 0.5);
+	}
+	label {
+		font-family: $header-font-family;
+		// color: $red;
+		text-transform: uppercase;
+	}
+	.Actions {
+		// text-align: center;
+
+		input.action {
+			text-transform: uppercase;
+		  @include button-base;
+		  @include button-size;
+		  @include button-style;
+		  @include single-transition;
+		}
+	}
+}

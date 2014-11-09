@@ -2,6 +2,7 @@
 class Nav extends DataObject {
   static $db = array(
     'LinkText' => 'Text',
+    'ExternalIcon' => 'Text',
     'ExternalLink' => 'Text'
   );
 
@@ -22,7 +23,8 @@ class Nav extends DataObject {
     $fields = new FieldList();
 
     $fields->push( new TextField( 'LinkText', 'Menu link title' ) );
-    $fields->push( new TextField( 'ExternalLink', 'External Link<br />(Optional - you may use external or internal. <br /><em>*If both are used external will take precedence.</em>)' ) );
+    $fields->push( new TextField( 'ExternalLink', 'External Link<br>(Optional - you may use external or internal.<br><em>*If both are used external will take precedence.</em>)' ) );
+    $fields->push( new TextField( 'ExternalLink', 'External Icon<br>' ) );
     $fields->push( new TreeDropdownField( 'InternalLinkID', 'Internal Link<br />(Optional*)', 'SiteTree' ) );
 
     return $fields;

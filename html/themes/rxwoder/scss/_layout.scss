@@ -2,12 +2,23 @@
 	padding: 3em 0;
 }
 
-
 .request {
 	text-align: center;
+}
 
-	.button {
-		font-family: $header-font-family;
-		text-transform: uppercase;
+.button {
+	font-family: $header-font-family;
+	text-transform: uppercase;
+}
+
+
+// Moved this here to prevent needing to include foundation classes in typography
+.typography {
+
+	h2 {
+		@media #{$small-only} {
+			font-size: 2.3em;
+		}
 	}
 }
+
