@@ -1,9 +1,10 @@
 .FeatureHeaderPage {
-	padding: 10em 0 8em 0;
+	padding: 10em 0 6em 0;
 	background-color: #000;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
+    background-image: image_url('bottle-bg-v3.jpg');
     min-height: 600px;
 
     @media #{$small-only} {
@@ -13,14 +14,25 @@
     }
 
     h2 {
-        font-size: 4em;
+        font-size: 5em;
+        display: inline;
+        background-color: $beige;
+        line-height: 1em;
+        box-shadow: 10px 0 0 $beige, -10px 0 0 $beige;
+
+        &:after {
+            content: " ";
+            display: block;
+            margin-bottom: 0.25em  ;
+        }
+        
         @media #{$small-only} {
             font-size: 2.8em;
         }
     }
 
     h3 {
-        color: rgba(#fff, 0.85);
+        color: $beige;
         font-size: 1.4em;
         @media #{$small-only} {
             font-size: 1.2em;

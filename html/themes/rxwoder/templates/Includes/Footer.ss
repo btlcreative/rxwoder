@@ -1,4 +1,4 @@
-<section class="footer">
+<footer>
   <div class="row">
     <div class="large-8 columns">
       <% if NavItems('FooterNav') %>
@@ -26,4 +26,4 @@
       </ul>
     </div>
   </div>
-</section>
+</footer>

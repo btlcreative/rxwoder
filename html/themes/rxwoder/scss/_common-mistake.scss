@@ -1,13 +1,43 @@
 .CommonMistakePage {
-  background: $red image_url('dave-bg-wide.png') no-repeat center center;
+  background: $dark-grey image_url('dave-bg-wide.jpg') no-repeat center center;
   background-size: cover;
   @media #{$small-only} {
-    background-size: 201%;
-    background-position: left -40%;
+    background-size: cover;
+    background-position: left center;
     padding-top: 55%;
   }
 
   h2, h3, p {
       color: #fff;
   }
+
+  h2 {
+    display: inline;
+    background-color: $red;
+    line-height: 1em;
+    box-shadow: 10px 0 0 $red, -10px 0 0 $red;
+  }
+
+  h3 {
+    display: inline;
+    background-color: #222;
+    line-height: 1.25em;
+    box-shadow: 10px 0 0 #222, -10px 0 0 #222;
+    &:before {
+      content: " ";
+      height: 0;
+      display: block;
+      width: 100%;
+    }
+
+    &:after {
+      content: " ";
+      height: 0;
+      display: block;
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }
+
+
 }
