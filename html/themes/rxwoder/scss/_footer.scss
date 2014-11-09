@@ -1,0 +1,20 @@
+footer {
+    padding: 2em 0;
+    background: $dark-grey;
+
+    ul {
+        margin: 0;
+        li {
+            a {
+                text-transform: uppercase;
+                font-size: 0.65em;
+                font-weight: 500;
+                color: darken(#fff, 50%);
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    } 
+}
