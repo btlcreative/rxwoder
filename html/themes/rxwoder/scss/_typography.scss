@@ -1,13 +1,12 @@
 h1, h2, h3, h4 {
 	font-weight: 900;
+	font-family: $header-font-family;
 }
-h1 {}
 
 h2 {
 	font-size: 3.0em;
 	text-transform: uppercase;
 	color: #D8232A;
-	font-weight: 900;
 	line-height: 1em;
 }
 
@@ -21,7 +20,6 @@ h3 {
 	}
 }
 
-
 p {
 
 	font-size: rem(18px);
@@ -30,32 +28,9 @@ p {
 	font-family: $body-font-family;
 	color: $body-font-color;
 
-	// spacing
-
 	&.deck {
 		font-size: emCalc(24px);
-		// color: $dark-grey;
 		line-height: emCalc(30px);
-	}
-}
-
-ul li, ol li {
-	// spacing set up
-	// line-height
-	// font-size
-	// color
-}
-ul {
-	// list-style-type
-	li {
-
-	}
-}
-
-ol {
-	// list-style-type
-	li {
-
 	}
 }
 
@@ -68,7 +43,6 @@ blockquote {
 		line-height: emCalc(30px);
 		color: $orange;
 		font-style: italic;
-
 
 		&:before {
 			content: "\201C";
