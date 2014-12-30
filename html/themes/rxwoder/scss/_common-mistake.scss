@@ -29,10 +29,9 @@
   }
 
   h3 {
-    display: inline;
-    background-color: #222;
+    display: block;
     line-height: 1.25em;
-    box-shadow: 10px 0 0 #222, -10px 0 0 #222;
+    margin-top: 1em;
     &:before {
       content: " ";
       height: 0;
