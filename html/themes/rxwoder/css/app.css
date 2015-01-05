@@ -8206,23 +8206,31 @@ img.right {
 
 /* line 1, ../scss/_feature-header.scss */
 .FeatureHeaderPage {
-  padding: 10em 0 6em 0;
-  background-color: #000;
+  padding-top: 8em;
+  padding-bottom: 120%;
+  background-color: #d8232a;
   background-size: cover;
+  background-image: url('/themes/rxwoder/images/bottle-bg-mobile.jpg?1420494861');
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-image: url('/themes/rxwoder/images/bottle-bg-v3.jpg?1415547844');
-  min-height: 600px;
 }
-@media only screen and (max-width: 40em) {
+@media only screen and (min-width: 40.063em) {
   /* line 1, ../scss/_feature-header.scss */
   .FeatureHeaderPage {
-    padding-bottom: 70%;
-    background-size: 170%;
-    background-position: 80% bottom;
+    padding: 10em 0 6em 0;
+    background-color: #000;
+    background-position: 70% bottom;
+    background-image: url('/themes/rxwoder/images/bottle-bg.jpg?1420494861');
+    min-height: 600px;
   }
 }
-/* line 16, ../scss/_feature-header.scss */
+@media only screen and (min-width: 64.063em) {
+  /* line 1, ../scss/_feature-header.scss */
+  .FeatureHeaderPage {
+    padding-top: 12em;
+  }
+}
+/* line 22, ../scss/_feature-header.scss */
 .FeatureHeaderPage h2 {
   font-size: 5em;
   display: inline;
@@ -8230,25 +8238,25 @@ img.right {
   line-height: 1em;
   box-shadow: 10px 0 0 #faf9f4, -10px 0 0 #faf9f4;
 }
-/* line 23, ../scss/_feature-header.scss */
+/* line 29, ../scss/_feature-header.scss */
 .FeatureHeaderPage h2:after {
   content: " ";
   display: block;
   margin-bottom: 0.25em;
 }
 @media only screen and (max-width: 40em) {
-  /* line 16, ../scss/_feature-header.scss */
+  /* line 22, ../scss/_feature-header.scss */
   .FeatureHeaderPage h2 {
     font-size: 2.8em;
   }
 }
-/* line 34, ../scss/_feature-header.scss */
+/* line 40, ../scss/_feature-header.scss */
 .FeatureHeaderPage h3 {
   color: #faf9f4;
   font-size: 1.4em;
 }
 @media only screen and (max-width: 40em) {
-  /* line 34, ../scss/_feature-header.scss */
+  /* line 40, ../scss/_feature-header.scss */
   .FeatureHeaderPage h3 {
     font-size: 1.2em;
   }
@@ -8322,7 +8330,20 @@ img.right {
 .header nav ul li {
   float: left;
 }
-/* line 55, ../scss/_header.scss */
+/* line 57, ../scss/_header.scss */
+.header nav ul li.active a {
+  color: #d8232a;
+}
+/* line 60, ../scss/_header.scss */
+.header nav ul li.active a:hover .link-bg {
+  background-color: #faf9f4;
+}
+/* line 66, ../scss/_header.scss */
+.header nav ul li.active .link-bg {
+  background-color: #faf9f4;
+  width: 100%;
+}
+/* line 72, ../scss/_header.scss */
 .header nav ul li a {
   display: block;
   padding: 2.08em 1em;
@@ -8331,47 +8352,83 @@ img.right {
   font-weight: 800;
   color: #FFF;
   font-size: 0.875em;
+  position: relative;
+  overflow: hidden;
+  margin-left: 0.5em;
+}
+/* line 85, ../scss/_header.scss */
+.header nav ul li a:hover .link-bg {
+  width: 100%;
+  background-color: #d8232a;
+}
+/* line 92, ../scss/_header.scss */
+.header nav ul li a .content {
+  z-index: 1;
+  position: relative;
+}
+/* line 97, ../scss/_header.scss */
+.header nav ul li a .link-bg {
+  width: 0%;
+  background-color: none;
+  padding: 1em;
+  top: 1.8em;
+  left: 0;
+  z-index: 0;
+  display: block;
+  position: absolute;
+  -webkit-transition: all 120ms ease;
+          transition: all 120ms ease;
 }
 
 /* line 1, ../scss/_common-mistake.scss */
 .CommonMistakePage {
-  background: #0d0d0d url('/themes/rxwoder/images/dave-bg-wide.jpg?1415547844') no-repeat center center;
-  background-size: cover;
+  background-size: 100%;
+  background-position: center top;
+  background-color: #2a2a2a;
+  background-image: url('/themes/rxwoder/images/dave-bg-mobile.jpg?1420494861');
+  padding-top: 60%;
+  background-repeat: no-repeat;
 }
-@media only screen and (max-width: 40em) {
+@media only screen and (min-width: 40.063em) {
   /* line 1, ../scss/_common-mistake.scss */
   .CommonMistakePage {
     background-size: cover;
-    background-position: left center;
-    padding-top: 55%;
+    background-position: center top;
   }
 }
-/* line 10, ../scss/_common-mistake.scss */
+@media only screen and (min-width: 64.063em) {
+  /* line 1, ../scss/_common-mistake.scss */
+  .CommonMistakePage {
+    padding-top: 4em;
+    background: #0d0d0d url('/themes/rxwoder/images/dave-bg-wide.jpg?1415547844') no-repeat center center;
+    background-size: cover;
+  }
+}
+/* line 20, ../scss/_common-mistake.scss */
 .CommonMistakePage h2, .CommonMistakePage h3, .CommonMistakePage p {
   color: #fff;
 }
-/* line 14, ../scss/_common-mistake.scss */
+/* line 24, ../scss/_common-mistake.scss */
 .CommonMistakePage h2 {
   display: inline;
   background-color: #d8232a;
   line-height: 1em;
   box-shadow: 10px 0 0 #d8232a, -10px 0 0 #d8232a;
 }
-/* line 21, ../scss/_common-mistake.scss */
+/* line 31, ../scss/_common-mistake.scss */
 .CommonMistakePage h3 {
-  display: inline;
-  background-color: #222;
+  display: block;
   line-height: 1.25em;
-  box-shadow: 10px 0 0 #222, -10px 0 0 #222;
+  margin-top: 1em;
 }
-/* line 26, ../scss/_common-mistake.scss */
+/* line 35, ../scss/_common-mistake.scss */
 .CommonMistakePage h3:before {
   content: " ";
   height: 0;
   display: block;
   width: 100%;
 }
-/* line 33, ../scss/_common-mistake.scss */
+/* line 42, ../scss/_common-mistake.scss */
 .CommonMistakePage h3:after {
   content: " ";
   height: 0;

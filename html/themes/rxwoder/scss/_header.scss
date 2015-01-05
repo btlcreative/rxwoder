@@ -52,6 +52,23 @@
             float: right;
             li {
                 float: left;
+                
+                &.active {
+                    a {
+                        color: $red;
+                        &:hover {
+                            .link-bg {
+                                background-color: $beige;
+                            }
+                        }
+                    }
+    
+                    .link-bg {
+                        background-color: $beige;
+                        width: 100%;
+                    }
+                }
+
                 a {
                     display: block;
                     padding: 2.08em 1em;
@@ -60,6 +77,34 @@
                     font-weight: 800;
                     color: #FFF;
                     font-size: 0.875em;
+                    position: relative;
+                    overflow: hidden;
+                    margin-left: 0.5em;
+
+                    &:hover {
+                        .link-bg {
+                            width: 100%;
+                            background-color: $red;
+
+                        }
+                    }
+
+                    .content {
+                        z-index: 1;
+                        position: relative;
+                    }
+
+                    .link-bg {
+                        width: 0%;
+                        background-color: none;
+                        padding: 1em;
+                        top:  1.8em;
+                        left: 0;
+                        z-index: 0;
+                        display: block;
+                        position: absolute;
+                        transition: all 120ms ease;
+                    }
                 }
             }
         }

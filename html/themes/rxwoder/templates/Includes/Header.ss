@@ -86,7 +86,12 @@
 			<ul>
 				<% loop Menu(1) %>
 			<li class="<% if $LinkingMode == "current" || $LinkingMode == "section" %>active<% end_if %><% if $Children %> has-dropdown<% end_if %>">
-				<a href="$Link" title="Go to the $Title.ATT">$MenuTitle</a>
+				<a href="$Link" title="Go to the $Title.ATT">
+					<span class="link-bg"></span>
+					<span class="content">$MenuTitle</span>
+						
+					
+				</a>
 			</li>
 			<% end_loop %>
 			</ul>

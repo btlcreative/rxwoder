@@ -15,7 +15,7 @@
 	<% if $Image %>
 	<meta property="og:image" content="<% with $Image.SetSize(500,500) %>$AbsoluteURL.ATT<% end_with %>" />
 	<% end_if %>
-	<link rel="icon" type="image/png" href="$ThemeDir/favicon.ico" />
+	<link rel="icon" type="image/png" href="$ThemeDir/favicon.ico?v=2" />
 	<%--See [Requirements](http://doc.silverstripe.org/framework/en/reference/requirements) for loading from controller--%>
 
 	<link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
