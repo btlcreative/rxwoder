@@ -1,1 +1,82 @@
-h1,h2,h3,h4{font-weight:900}h2{font-size:3.0em;text-transform:uppercase;color:#D8232A;font-weight:900;line-height:1em}h3{font-weight:800;text-transform:uppercase;font-size:1.25em;line-height:1.2em}h3.subheader{line-height:1.2em}p{font-size:rem(18px);line-height:rem(28px);font-family:"Open Sans","HelveticaNeue-Regular, Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;color:#5e5e5e}p.deck{font-size:emCalc(24px);line-height:emCalc(30px)}blockquote{border-left:4px solid #e69d16;margin:2em 0}blockquote p{font-size:emCalc(24px);line-height:emCalc(30px);color:#e69d16;font-style:italic}blockquote p:before{content:"\201C"}blockquote p:after{content:"\201D"}img.left{float:left;margin:0 1.5em 0.5em 0;border-right:5px solid #0d0d0d;border-bottom:5px solid #0d0d0d}img.right{float:right;margin:0 0 0.5em 1.5em;border-left:5px solid #0d0d0d;border-bottom:5px solid #0d0d0d}#tinymce.mceContentBody.typography{padding:18px 20px;font-size:1em;max-width:720px}
+@import url("http://fonts.googleapis.com/css?family=Russo+One|Open+Sans:400italic,400,700,800");
+/* line 1, ../scss/_typography.scss */
+h1, h2, h3, h4 {
+  font-weight: 900;
+  font-family: "Russo One", "proxima-nova-extra-condensed", "HelveticaNeue-Regular, Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+/* line 6, ../scss/_typography.scss */
+h2 {
+  font-size: 3.0em;
+  text-transform: uppercase;
+  color: #D8232A;
+  line-height: 1em;
+}
+
+/* line 13, ../scss/_typography.scss */
+h3 {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  line-height: 1.2em;
+}
+/* line 18, ../scss/_typography.scss */
+h3.subheader {
+  line-height: 1.2em;
+}
+
+/* line 23, ../scss/_typography.scss */
+p {
+  font-size: rem(18px);
+  line-height: rem(28px);
+  font-family: "Open Sans", "HelveticaNeue-Regular, Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  color: #5e5e5e;
+}
+/* line 31, ../scss/_typography.scss */
+p.deck {
+  font-size: emCalc(24px);
+  line-height: emCalc(30px);
+}
+
+/* line 37, ../scss/_typography.scss */
+blockquote {
+  border-left: 4px solid #e69d16;
+  margin: 2em 0;
+}
+/* line 41, ../scss/_typography.scss */
+blockquote p {
+  font-size: emCalc(24px);
+  line-height: emCalc(30px);
+  color: #e69d16;
+  font-style: italic;
+}
+/* line 47, ../scss/_typography.scss */
+blockquote p:before {
+  content: "\201C";
+}
+/* line 51, ../scss/_typography.scss */
+blockquote p:after {
+  content: "\201D";
+}
+
+/* line 58, ../scss/_typography.scss */
+img.left {
+  float: left;
+  margin: 0 1.5em 0.5em 0;
+  border-right: 5px solid #0d0d0d;
+  border-bottom: 5px solid #0d0d0d;
+}
+/* line 65, ../scss/_typography.scss */
+img.right {
+  float: right;
+  margin: 0 0 0.5em 1.5em;
+  border-left: 5px solid #0d0d0d;
+  border-bottom: 5px solid #0d0d0d;
+}
+
+/* line 5, ../scss/editor.scss */
+#tinymce.mceContentBody.typography {
+  padding: 18px 20px;
+  font-size: 1em;
+  max-width: 720px;
+}
