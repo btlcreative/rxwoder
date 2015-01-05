@@ -39,8 +39,6 @@ class DetailSummaryPage extends GridPage {
 class DetailSummaryPage_Controller extends Page_Controller {
 
 	public function index() {
-		// die(Director::redirect());
-		Director::redirect($this->Link('/'));
-		// director::redirect($this->Parent()->Link());
+		Director::direct($this->redirect());
 	}
 }

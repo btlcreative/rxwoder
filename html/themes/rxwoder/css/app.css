@@ -47,8 +47,6 @@ html, body {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1617,7 +1615,8 @@ select {
   position: relative;
   padding: 0.875rem 1.5rem 0.875rem 0.875rem;
   font-size: 0.8125rem;
-  transition: opacity 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out;
+          transition: opacity 300ms ease-out;
   background-color: #d8232a;
   border-color: #ba1e24;
   color: white;
@@ -2307,7 +2306,8 @@ button, .button {
   background-color: #d8232a;
   border-color: #ad1c22;
   color: white;
-  transition: background-color 300ms ease-out;
+  -webkit-transition: background-color 300ms ease-out;
+          transition: background-color 300ms ease-out;
 }
 /* line 133, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button:hover, button:focus, .button:hover, .button:focus {
@@ -3386,7 +3386,7 @@ label {
   display: block;
   font-weight: normal;
   line-height: 1.5;
-  margin-bottom: 0;
+  margin-bottom: 0
   /* Styles for required inputs */
 }
 /* line 335, ../bower_components/foundation/scss/foundation/components/_forms.scss */
@@ -3548,10 +3548,9 @@ textarea {
   padding: 0.5rem;
   height: 2.3125rem;
   width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+  -webkit-transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+          transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
 }
 /* line 189, ../bower_components/foundation/scss/foundation/components/_global.scss */
 input[type="text"]:focus,
@@ -4097,22 +4096,34 @@ kbd {
   line-height: 1.8em;
 }
 
-@keyframes rotate {
+@-webkit-keyframes rotate {
   /* line 78, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
   from {
     -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
   /* line 79, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
   to {
     -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  /* line 78, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 79, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
@@ -4160,10 +4171,14 @@ kbd {
   border: solid 3px;
   border-color: #555 #fff;
   border-radius: 1000px;
-  animation-name: rotate;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 /* line 128, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
@@ -4189,75 +4204,68 @@ kbd {
 /* line 145, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
 .orbit-container .orbit-slides-container.fade > li {
   opacity: 0;
-  transition: opacity 500ms ease-in-out;
+  -webkit-transition: opacity 500ms ease-in-out;
+          transition: opacity 500ms ease-in-out;
   -ms-transform: translate(0, 0);
   -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 /* line 149, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
 .orbit-container .orbit-slides-container.fade > li.animate-in {
   opacity: 1;
   z-index: 20;
-  transition: opacity 500ms ease-in-out;
+  -webkit-transition: opacity 500ms ease-in-out;
+          transition: opacity 500ms ease-in-out;
 }
 /* line 154, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
 .orbit-container .orbit-slides-container.fade > li.animate-out {
   z-index: 10;
-  transition: opacity 500ms ease-in-out;
+  -webkit-transition: opacity 500ms ease-in-out;
+          transition: opacity 500ms ease-in-out;
 }
 /* line 160, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
 .orbit-container .orbit-slides-container.swipe-next > li {
   -ms-transform: translate(100%, 0);
   -webkit-transform: translate3d(100%, 0, 0);
-  -moz-transform: translate3d(100%, 0, 0);
-  -o-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
 }
 /* line 162, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
 .orbit-container .orbit-slides-container.swipe-next > li.animate-in {
   -ms-transform: translate(0, 0);
   -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
 }
 /* line 166, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
 .orbit-container .orbit-slides-container.swipe-next > li.animate-out {
   -ms-transform: translate(-100%, 0);
   -webkit-transform: translate3d(-100%, 0, 0);
-  -moz-transform: translate3d(-100%, 0, 0);
-  -o-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
-  transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
 }
 /* line 172, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
 .orbit-container .orbit-slides-container.swipe-prev > li {
   -ms-transform: translate(-100%, 0);
   -webkit-transform: translate3d(-100%, 0, 0);
-  -moz-transform: translate3d(-100%, 0, 0);
-  -o-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
 /* line 174, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
 .orbit-container .orbit-slides-container.swipe-prev > li.animate-in {
   -ms-transform: translate(0, 0);
   -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
 }
 /* line 178, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
 .orbit-container .orbit-slides-container.swipe-prev > li.animate-out {
   -ms-transform: translate(100%, 0);
   -webkit-transform: translate3d(100%, 0, 0);
-  -moz-transform: translate3d(100%, 0, 0);
-  -o-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
-  transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
 }
 /* line 184, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
 .orbit-container .orbit-slides-container > li {
@@ -4267,8 +4275,6 @@ kbd {
   width: 100%;
   -ms-transform: translate(100%, 0);
   -webkit-transform: translate3d(100%, 0, 0);
-  -moz-transform: translate3d(100%, 0, 0);
-  -o-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
 }
 /* line 191, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
@@ -4283,8 +4289,6 @@ kbd {
   left: 0;
   -ms-transform: translate(0, 0);
   -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 /* line 202, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
@@ -4352,9 +4356,7 @@ kbd {
   border: inset 8px;
   border-left-style: solid;
   -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
   transform: rotate(180deg);
   border-color: transparent #fff transparent transparent;
 }
@@ -4491,11 +4493,10 @@ kbd {
     margin-left: 0% !important;
     opacity: 1 !important;
     -webkit-transform: none !important;
-    -moz-transform: none !important;
     -ms-transform: none !important;
-    -o-transform: none !important;
     transform: none !important;
-    transition: none !important;
+    -webkit-transition: none !important;
+            transition: none !important;
   }
   /* line 407, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
   .orbit-stack-on-small .orbit-timer {
@@ -5270,7 +5271,8 @@ div.switch label {
   margin: 0;
   font-weight: bold;
   text-align: left;
-  transition: all 0.1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+          transition: all 0.1s ease-out;
 }
 /* line 94, ../bower_components/foundation/scss/foundation/components/_switch.scss */
 div.switch input {
@@ -5295,7 +5297,8 @@ div.switch span:last-child {
   padding: 0;
   border-width: 1px;
   border-style: solid;
-  transition: all 0.1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+          transition: all 0.1s ease-out;
 }
 /* line 125, ../bower_components/foundation/scss/foundation/components/_switch.scss */
 div.switch input:not(:checked) + label {
@@ -5363,12 +5366,14 @@ div.switch span:last-child {
 div.switch span:last-child {
   border-color: #b3b3b3;
   background: white;
+  background: -webkit-linear-gradient(top, white 0%, #f2f2f2 100%);
   background: linear-gradient(to bottom, white 0%, #f2f2f2 100%);
   box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.07), 1000px 0 0 980px #f3faf6, -2px 0 10px 0 rgba(0, 0, 0, 0.07), -1000px 0 0 1000px whitesmoke;
 }
 /* line 218, ../bower_components/foundation/scss/foundation/components/_switch.scss */
 div.switch:hover span:last-child, div.switch:focus span:last-child {
   background: white;
+  background: -webkit-linear-gradient(top, white 0%, #e6e6e6 100%);
   background: linear-gradient(to bottom, white 0%, #e6e6e6 100%);
 }
 /* line 224, ../bower_components/foundation/scss/foundation/components/_switch.scss */
@@ -6143,7 +6148,7 @@ blockquote p {
 
   /* line 484, ../bower_components/foundation/scss/foundation/components/_type.scss */
   thead {
-    display: table-header-group;
+    display: table-header-group
     /* h5bp.com/t */
   }
 
@@ -6320,7 +6325,8 @@ blockquote p {
   border: solid 4px white;
   max-width: 100%;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-  transition: all 200ms ease-out;
+  -webkit-transition: all 200ms ease-out;
+          transition: all 200ms ease-out;
 }
 /* line 50, ../bower_components/foundation/scss/foundation/components/_thumbs.scss */
 .th:hover, .th:focus {
@@ -6618,7 +6624,8 @@ meta.foundation-mq-topbar {
   left: 0;
   position: relative;
   width: auto;
-  transition: left 300ms ease-out;
+  -webkit-transition: left 300ms ease-out;
+          transition: left 300ms ease-out;
 }
 /* line 283, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul {
@@ -6939,7 +6946,8 @@ meta.foundation-mq-topbar {
 
   /* line 462, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section {
-    transition: none 0 0;
+    -webkit-transition: none 0 0;
+            transition: none 0 0;
     left: 0 !important;
   }
   /* line 466, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -7139,9 +7147,6 @@ meta.foundation-mq-topbar {
   position: relative;
   width: 100%;
   -webkit-transition: -webkit-transform 500ms ease;
-  -moz-transition: -moz-transform 500ms ease;
-  -ms-transition: -ms-transform 500ms ease;
-  -o-transition: -o-transform 500ms ease;
   transition: transform 500ms ease;
 }
 /* line 176, ../bower_components/foundation/scss/foundation/components/_global.scss */
@@ -7235,7 +7240,8 @@ meta.foundation-mq-topbar {
   padding: 0;
   color: white;
   position: relative;
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 /* line 138, ../bower_components/foundation/scss/foundation/components/_global.scss */
 .tab-bar .menu-icon span:after {
@@ -7265,13 +7271,12 @@ meta.foundation-mq-topbar {
   background: #333333;
   z-index: 1001;
   box-sizing: content-box;
-  transition: transform 500ms ease 0s;
+  -webkit-transition: -webkit-transform 500ms ease 0s;
+          transition: transform 500ms ease 0s;
   -webkit-overflow-scrolling: touch;
   -ms-transform: translate(-100%, 0);
   -webkit-transform: translate3d(-100%, 0, 0);
-  -moz-transform: translate3d(-100%, 0, 0);
   -ms-transform: translate3d(-100%, 0, 0);
-  -o-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
   left: 0;
 }
@@ -7291,13 +7296,12 @@ meta.foundation-mq-topbar {
   background: #333333;
   z-index: 1001;
   box-sizing: content-box;
-  transition: transform 500ms ease 0s;
+  -webkit-transition: -webkit-transform 500ms ease 0s;
+          transition: transform 500ms ease 0s;
   -webkit-overflow-scrolling: touch;
   -ms-transform: translate(100%, 0);
   -webkit-transform: translate3d(100%, 0, 0);
-  -moz-transform: translate3d(100%, 0, 0);
   -ms-transform: translate3d(100%, 0, 0);
-  -o-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
   right: 0;
 }
@@ -7329,7 +7333,8 @@ ul.off-canvas-list li a {
   padding: 0.66667rem;
   color: rgba(255, 255, 255, 0.7);
   border-bottom: 1px solid #262626;
-  transition: background 300ms ease;
+  -webkit-transition: background 300ms ease;
+          transition: background 300ms ease;
 }
 /* line 231, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 ul.off-canvas-list li a:hover {
@@ -7340,15 +7345,14 @@ ul.off-canvas-list li a:hover {
 .move-right > .inner-wrap {
   -ms-transform: translate(15.625rem, 0);
   -webkit-transform: translate3d(15.625rem, 0, 0);
-  -moz-transform: translate3d(15.625rem, 0, 0);
   -ms-transform: translate3d(15.625rem, 0, 0);
-  -o-transform: translate3d(15.625rem, 0, 0);
   transform: translate3d(15.625rem, 0, 0);
 }
 /* line 320, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .move-right .exit-off-canvas {
   -webkit-backface-visibility: hidden;
-  transition: background 300ms ease;
+  -webkit-transition: background 300ms ease;
+          transition: background 300ms ease;
   cursor: pointer;
   box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
   display: block;
@@ -7372,15 +7376,14 @@ ul.off-canvas-list li a:hover {
 .move-left > .inner-wrap {
   -ms-transform: translate(-15.625rem, 0);
   -webkit-transform: translate3d(-15.625rem, 0, 0);
-  -moz-transform: translate3d(-15.625rem, 0, 0);
   -ms-transform: translate3d(-15.625rem, 0, 0);
-  -o-transform: translate3d(-15.625rem, 0, 0);
   transform: translate3d(-15.625rem, 0, 0);
 }
 /* line 328, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .move-left .exit-off-canvas {
   -webkit-backface-visibility: hidden;
-  transition: background 300ms ease;
+  -webkit-transition: background 300ms ease;
+          transition: background 300ms ease;
   cursor: pointer;
   box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
   display: block;
@@ -7404,15 +7407,14 @@ ul.off-canvas-list li a:hover {
 .offcanvas-overlap .left-off-canvas-menu, .offcanvas-overlap .right-off-canvas-menu {
   -ms-transform: none;
   -webkit-transform: none;
-  -moz-transform: none;
-  -o-transform: none;
   transform: none;
   z-index: 1003;
 }
 /* line 339, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .offcanvas-overlap .exit-offcanvas-menu {
   -webkit-backface-visibility: hidden;
-  transition: background 300ms ease;
+  -webkit-transition: background 300ms ease;
+          transition: background 300ms ease;
   cursor: pointer;
   box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
   display: block;
@@ -8005,7 +8007,8 @@ form .Actions input.action {
   background-color: #d8232a;
   border-color: #ad1c22;
   color: white;
-  transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out;
+          transition: all 300ms ease-out;
 }
 /* line 133, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 form .Actions input.action:hover, form .Actions input.action:focus {
@@ -8123,9 +8126,11 @@ footer ul.social li a span {
 h1, h2, h3, h4 {
   font-weight: 900;
   font-family: "Russo One", "proxima-nova-extra-condensed", "HelveticaNeue-Regular, Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  margin-top: 0.1875rem;
+  margin-bottom: 0.5rem;
 }
 
-/* line 6, ../scss/_typography.scss */
+/* line 8, ../scss/_typography.scss */
 h2 {
   font-size: 3.0em;
   text-transform: uppercase;
@@ -8133,60 +8138,65 @@ h2 {
   line-height: 1em;
 }
 
-/* line 13, ../scss/_typography.scss */
+/* line 15, ../scss/_typography.scss */
 h3 {
   font-weight: 800;
   text-transform: uppercase;
   font-size: 1.25em;
   line-height: 1.2em;
 }
-/* line 18, ../scss/_typography.scss */
+/* line 20, ../scss/_typography.scss */
 h3.subheader {
   line-height: 1.2em;
 }
 
-/* line 23, ../scss/_typography.scss */
+/* line 25, ../scss/_typography.scss */
+ul, ol {
+  margin-top: 0;
+}
+
+/* line 29, ../scss/_typography.scss */
 p {
-  font-size: rem(18px);
-  line-height: rem(28px);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   font-family: "Open Sans", "HelveticaNeue-Regular, Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: #5e5e5e;
 }
-/* line 31, ../scss/_typography.scss */
+/* line 37, ../scss/_typography.scss */
 p.deck {
   font-size: 1.5rem;
   line-height: 1.875rem;
 }
 
-/* line 37, ../scss/_typography.scss */
+/* line 43, ../scss/_typography.scss */
 blockquote {
   border-left: 4px solid #e69d16;
   margin: 2em 0;
 }
-/* line 41, ../scss/_typography.scss */
+/* line 47, ../scss/_typography.scss */
 blockquote p {
   font-size: 1.5rem;
   line-height: 1.875rem;
   color: #e69d16;
   font-style: italic;
 }
-/* line 47, ../scss/_typography.scss */
+/* line 53, ../scss/_typography.scss */
 blockquote p:before {
   content: "\201C";
 }
-/* line 51, ../scss/_typography.scss */
+/* line 57, ../scss/_typography.scss */
 blockquote p:after {
   content: "\201D";
 }
 
-/* line 58, ../scss/_typography.scss */
+/* line 64, ../scss/_typography.scss */
 img.left {
   float: left;
   margin: 0 1.5em 0.5em 0;
   border-right: 5px solid #0d0d0d;
   border-bottom: 5px solid #0d0d0d;
 }
-/* line 65, ../scss/_typography.scss */
+/* line 71, ../scss/_typography.scss */
 img.right {
   float: right;
   margin: 0 0 0.5em 1.5em;
@@ -8374,7 +8384,6 @@ img.right {
 .facebook {
   min-height: 200px;
   background: url('/themes/rxwoder/images/bg.jpg?1414356543') no-repeat center left;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 /* line 8, ../scss/_social-feeds.scss */
@@ -8469,7 +8478,8 @@ footer ul.social li a span {
   background: rgba(34, 34, 34, 0.85);
   visibility: hidden;
   opacity: 0;
-  transition: all 400ms ease;
+  -webkit-transition: all 400ms ease;
+          transition: all 400ms ease;
 }
 /* line 13, ../scss/_off-canvas-nav.scss */
 .open #off-canvas-nav {
@@ -8478,7 +8488,9 @@ footer ul.social li a span {
 }
 /* line 16, ../scss/_off-canvas-nav.scss */
 .open #off-canvas-nav .menu {
-  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
   opacity: 1;
 }
 /* line 22, ../scss/_off-canvas-nav.scss */
@@ -8503,9 +8515,13 @@ footer ul.social li a span {
   bottom: 8%;
   left: 8%;
   right: 8%;
-  transition: all 200ms ease;
-  transition-delay: 300ms;
-  transform: translateY(-50%);
+  -webkit-transition: all 200ms ease;
+          transition: all 200ms ease;
+  -webkit-transition-delay: 300ms;
+          transition-delay: 300ms;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   opacity: 0;
 }
 /* line 46, ../scss/_off-canvas-nav.scss */
