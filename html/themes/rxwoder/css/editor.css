@@ -32,41 +32,41 @@ p {
   font-family: "Open Sans", "HelveticaNeue-Regular, Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: #5e5e5e;
 }
-/* line 31, ../scss/_typography.scss */
+/* line 30, ../scss/_typography.scss */
 p.deck {
   font-size: emCalc(24px);
   line-height: emCalc(30px);
 }
 
-/* line 37, ../scss/_typography.scss */
+/* line 36, ../scss/_typography.scss */
 blockquote {
-  border-left: 4px solid #e69d16;
+  border-left: 4px solid #E69D16;
   margin: 2em 0;
 }
-/* line 41, ../scss/_typography.scss */
+/* line 40, ../scss/_typography.scss */
 blockquote p {
   font-size: emCalc(24px);
   line-height: emCalc(30px);
-  color: #e69d16;
+  color: #E69D16;
   font-style: italic;
 }
-/* line 47, ../scss/_typography.scss */
+/* line 46, ../scss/_typography.scss */
 blockquote p:before {
   content: "\201C";
 }
-/* line 51, ../scss/_typography.scss */
+/* line 50, ../scss/_typography.scss */
 blockquote p:after {
   content: "\201D";
 }
 
-/* line 58, ../scss/_typography.scss */
+/* line 57, ../scss/_typography.scss */
 img.left {
   float: left;
   margin: 0 1.5em 0.5em 0;
   border-right: 5px solid #0d0d0d;
   border-bottom: 5px solid #0d0d0d;
 }
-/* line 65, ../scss/_typography.scss */
+/* line 64, ../scss/_typography.scss */
 img.right {
   float: right;
   margin: 0 0 0.5em 1.5em;

@@ -6,6 +6,7 @@ $beige: #FAF9F4;
 $off-white: #FDFDFB;
 
 $dark-grey: #0d0d0d;
+$black: #1d1d1d;
 
 $red: #D8232A;
 $orange: #E69D16;
@@ -26,3 +27,6 @@ $block-grid-default-spacing: 0;
 
 // Buttons
 $button-font-family: $header-font-family;
+$easeOutExpo   : cubic-bezier(0.190, 1.000, 0.220, 1.000);
+$easeInExpo    : cubic-bezier(0.950, 0.050, 0.795, 0.035);
+$easeInOutExpo : cubic-bezier(1.000, 0.000, 0.000, 1.000);

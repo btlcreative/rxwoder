@@ -50,6 +50,8 @@ class HomePage extends Page {
 						if ($row->type != 'photo' && (!empty($row->message))) {
 
 							$feedBlock = new SocialFeeds();
+							$feedBlock->Posted = $row->updated_time;
+
 							$StatusID = explode("_", $row->id);
 
 							$feedBlock->SourceID = $row->id;

@@ -8015,31 +8015,64 @@ form .Actions input.action:hover, form .Actions input.action:focus {
 
 /* line 1, ../scss/_footer.scss */
 footer {
-  padding: 2em 0;
-  background: #0d0d0d;
+  padding: 0;
+  background: #1d1d1d;
 }
 /* line 5, ../scss/_footer.scss */
 footer ul {
   margin: 0;
 }
-/* line 9, ../scss/_footer.scss */
+/* line 8, ../scss/_footer.scss */
 footer ul li a {
   text-transform: uppercase;
   font-size: 0.65em;
   font-weight: 500;
   color: gray;
 }
-/* line 15, ../scss/_footer.scss */
+/* line 14, ../scss/_footer.scss */
 footer ul li a:hover {
   color: #fff;
 }
+
 /* line 22, ../scss/_footer.scss */
-footer ul.social li {
-  float: right;
+.footer-about {
+  padding: 2em 0 0;
 }
-/* line 26, ../scss/_footer.scss */
-footer ul.social li a span {
-  font-size: 2em;
+@media only screen and (min-width: 40.063em) {
+  /* line 22, ../scss/_footer.scss */
+  .footer-about {
+    padding: 3em 0;
+  }
+}
+/* line 29, ../scss/_footer.scss */
+.footer-about p {
+  color: rgba(255, 255, 255, 0.65);
+  padding: 0;
+  margin: 0 0 1em;
+}
+/* line 35, ../scss/_footer.scss */
+.footer-about svg {
+  max-width: 138px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* line 42, ../scss/_footer.scss */
+.footer-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 1em 0;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 42, ../scss/_footer.scss */
+  .footer-nav {
+    padding: 3em 0;
+  }
+}
+/* line 51, ../scss/_footer.scss */
+.footer-nav h3 {
+  font-size: 0.75em;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 @font-face {
@@ -8149,41 +8182,41 @@ p {
   font-family: "Open Sans", "HelveticaNeue-Regular, Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: #5e5e5e;
 }
-/* line 31, ../scss/_typography.scss */
+/* line 30, ../scss/_typography.scss */
 p.deck {
   font-size: 1.5rem;
   line-height: 1.875rem;
 }
 
-/* line 37, ../scss/_typography.scss */
+/* line 36, ../scss/_typography.scss */
 blockquote {
   border-left: 4px solid #E69D16;
   margin: 2em 0;
 }
-/* line 41, ../scss/_typography.scss */
+/* line 40, ../scss/_typography.scss */
 blockquote p {
   font-size: 1.5rem;
   line-height: 1.875rem;
   color: #E69D16;
   font-style: italic;
 }
-/* line 47, ../scss/_typography.scss */
+/* line 46, ../scss/_typography.scss */
 blockquote p:before {
   content: "\201C";
 }
-/* line 51, ../scss/_typography.scss */
+/* line 50, ../scss/_typography.scss */
 blockquote p:after {
   content: "\201D";
 }
 
-/* line 58, ../scss/_typography.scss */
+/* line 57, ../scss/_typography.scss */
 img.left {
   float: left;
   margin: 0 1.5em 0.5em 0;
   border-right: 5px solid #0d0d0d;
   border-bottom: 5px solid #0d0d0d;
 }
-/* line 65, ../scss/_typography.scss */
+/* line 64, ../scss/_typography.scss */
 img.right {
   float: right;
   margin: 0 0 0.5em 1.5em;
@@ -8252,9 +8285,33 @@ img.right {
 /* line 1, ../scss/_detail-summary.scss */
 .DetailSummaryPage {
   background-color: #FAF9F4;
+  padding: 4em 0;
 }
 
-/* line 1, ../scss/_header.scss */
+/* line 2, ../scss/_header.scss */
+#logo svg {
+  fill: #FFF;
+  max-height: 48px;
+  margin: 16px 0;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 2, ../scss/_header.scss */
+  #logo svg {
+    margin: 1.13em 0;
+  }
+}
+/* line 10, ../scss/_header.scss */
+#logo svg path {
+  fill: #fff;
+}
+
+/* line 16, ../scss/_header.scss */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 21, ../scss/_header.scss */
 .header {
   background: none;
   position: absolute;
@@ -8262,19 +8319,15 @@ img.right {
   left: 0;
   width: 100%;
   height: 80px;
+  z-index: 2;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 1, ../scss/_header.scss */
+  /* line 21, ../scss/_header.scss */
   .header {
     background: none;
   }
 }
-/* line 11, ../scss/_header.scss */
-.header .hidden {
-  display: none;
-  visibility: hidden;
-}
-/* line 16, ../scss/_header.scss */
+/* line 33, ../scss/_header.scss */
 .header .menu-toggle {
   color: #000;
   position: absolute;
@@ -8285,27 +8338,11 @@ img.right {
   z-index: 9999;
   padding: 28px;
 }
-/* line 25, ../scss/_header.scss */
+/* line 42, ../scss/_header.scss */
 .header .menu-toggle svg path {
   fill: #D8232A;
 }
-/* line 32, ../scss/_header.scss */
-.header #logo svg {
-  fill: #FFF;
-  max-height: 48px;
-  margin: 16px 0;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 32, ../scss/_header.scss */
-  .header #logo svg {
-    margin: 1.13em 0;
-  }
-}
-/* line 40, ../scss/_header.scss */
-.header #logo svg path {
-  fill: #fff;
-}
-/* line 47, ../scss/_header.scss */
+/* line 48, ../scss/_header.scss */
 .header nav ul {
   list-style-type: none;
   margin: 0;
@@ -8313,24 +8350,24 @@ img.right {
   overflow: auto;
   float: right;
 }
-/* line 53, ../scss/_header.scss */
+/* line 54, ../scss/_header.scss */
 .header nav ul li {
   float: left;
 }
-/* line 57, ../scss/_header.scss */
+/* line 58, ../scss/_header.scss */
 .header nav ul li.active a {
   color: #D8232A;
 }
-/* line 60, ../scss/_header.scss */
+/* line 61, ../scss/_header.scss */
 .header nav ul li.active a:hover .link-bg {
   background-color: #FAF9F4;
 }
-/* line 66, ../scss/_header.scss */
+/* line 67, ../scss/_header.scss */
 .header nav ul li.active .link-bg {
   background-color: #FAF9F4;
   width: 100%;
 }
-/* line 72, ../scss/_header.scss */
+/* line 73, ../scss/_header.scss */
 .header nav ul li a {
   display: block;
   padding: 2.08em 1em;
@@ -8338,22 +8375,22 @@ img.right {
   font-family: "Russo One", "proxima-nova-extra-condensed", "HelveticaNeue-Regular, Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 800;
   color: #FFF;
-  font-size: 0.875em;
+  font-size: 0.85em;
   position: relative;
   overflow: hidden;
   margin-left: 0.5em;
 }
-/* line 85, ../scss/_header.scss */
+/* line 86, ../scss/_header.scss */
 .header nav ul li a:hover .link-bg {
   width: 100%;
   background-color: #D8232A;
 }
-/* line 92, ../scss/_header.scss */
+/* line 93, ../scss/_header.scss */
 .header nav ul li a .content {
   z-index: 1;
   position: relative;
 }
-/* line 97, ../scss/_header.scss */
+/* line 98, ../scss/_header.scss */
 .header nav ul li a .link-bg {
   width: 0%;
   background-color: none;
@@ -8370,8 +8407,8 @@ img.right {
 .CommonMistakePage {
   background-size: 100%;
   background-position: center top;
-  background-color: #2a2a2a;
-  background-image: url('/themes/rxwoder/images/dave-bg-mobile.jpg?1419800155');
+  background-color: #13141e;
+  background-image: url('/themes/rxwoder/images/dave-bg-mobile.jpg?1420502707');
   padding-top: 60%;
   background-repeat: no-repeat;
 }
@@ -8386,7 +8423,7 @@ img.right {
   /* line 1, ../scss/_common-mistake.scss */
   .CommonMistakePage {
     padding-top: 4em;
-    background: #0d0d0d url('/themes/rxwoder/images/dave-bg-wide.jpg?1415494002') no-repeat center center;
+    background: #0d0d0d url('/themes/rxwoder/images/dave-bg-wide.jpg?1420502014') no-repeat center center;
     background-size: cover;
   }
 }
@@ -8425,90 +8462,124 @@ img.right {
 
 /* line 1, ../scss/_social-feeds.scss */
 .facebook {
-  min-height: 200px;
-  background: url('/themes/rxwoder/images/bg.jpg?1414359725') no-repeat center left;
-  -webkit-background-size: cover;
-  background-size: cover;
+  padding: 1em 0;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 1, ../scss/_social-feeds.scss */
+  .facebook {
+    padding: 3em 0 1em;
+  }
 }
 /* line 8, ../scss/_social-feeds.scss */
-.facebook .message {
-  height: 200px;
+.facebook h3 {
+  font-size: 0.75em;
+  color: rgba(255, 255, 255, 0.5);
 }
-/* line 11, ../scss/_social-feeds.scss */
-.facebook .message article {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  font-size: 2em;
-  text-align: center;
-}
-/* line 24, ../scss/_social-feeds.scss */
-.facebook .message article span {
-  color: #D8232A;
-  font-weight: normal;
-  display: block;
-}
-/* line 30, ../scss/_social-feeds.scss */
-.facebook .message article div {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.8em;
-  line-height: 1.2em;
-  font-style: italic;
-}
-/* line 37, ../scss/_social-feeds.scss */
-.facebook .message article div:before {
-  content: "\201C";
-}
-/* line 40, ../scss/_social-feeds.scss */
-.facebook .message article div:after {
-  content: "\201D";
+/* line 13, ../scss/_social-feeds.scss */
+.facebook p {
+  padding: 0;
 }
 
-/* line 50, ../scss/_social-feeds.scss */
+/* line 18, ../scss/_social-feeds.scss */
 .instagram {
-  color: #D8232A;
-  font-weight: normal;
-  font-size: 1.6em;
+  margin-top: 1em;
 }
-/* line 176, ../bower_components/foundation/scss/foundation/components/_global.scss */
-.instagram:before, .instagram:after {
+@media only screen and (min-width: 40.063em) {
+  /* line 18, ../scss/_social-feeds.scss */
+  .instagram {
+    margin-top: 3em;
+  }
+}
+/* line 24, ../scss/_social-feeds.scss */
+.instagram .image-wrapper {
+  position: relative;
+  transform: scale3d(1, 1, 1);
+  transition: all 160ms cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 99;
+}
+/* line 29, ../scss/_social-feeds.scss */
+.instagram .image-wrapper:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
   content: " ";
-  display: table;
 }
-/* line 177, ../bower_components/foundation/scss/foundation/components/_global.scss */
-.instagram:after {
-  clear: both;
+/* line 40, ../scss/_social-feeds.scss */
+.instagram .image-wrapper:hover {
+  z-index: 999;
+  transform-origin: bottom center;
+  transform: scale3d(1.15, 1.15, 1.15);
+  position: relative;
+}
+/* line 45, ../scss/_social-feeds.scss */
+.instagram .image-wrapper:hover:before {
+  background: rgba(0, 0, 0, 0.1);
 }
 
 /* line 1, ../scss/_footer.scss */
 footer {
-  padding: 2em 0;
-  background: #0d0d0d;
+  padding: 0;
+  background: #1d1d1d;
 }
 /* line 5, ../scss/_footer.scss */
 footer ul {
   margin: 0;
 }
-/* line 9, ../scss/_footer.scss */
+/* line 8, ../scss/_footer.scss */
 footer ul li a {
   text-transform: uppercase;
   font-size: 0.65em;
   font-weight: 500;
   color: gray;
 }
-/* line 15, ../scss/_footer.scss */
+/* line 14, ../scss/_footer.scss */
 footer ul li a:hover {
   color: #fff;
 }
+
 /* line 22, ../scss/_footer.scss */
-footer ul.social li {
-  float: right;
+.footer-about {
+  padding: 2em 0 0;
 }
-/* line 26, ../scss/_footer.scss */
-footer ul.social li a span {
-  font-size: 2em;
+@media only screen and (min-width: 40.063em) {
+  /* line 22, ../scss/_footer.scss */
+  .footer-about {
+    padding: 3em 0;
+  }
+}
+/* line 29, ../scss/_footer.scss */
+.footer-about p {
+  color: rgba(255, 255, 255, 0.65);
+  padding: 0;
+  margin: 0 0 1em;
+}
+/* line 35, ../scss/_footer.scss */
+.footer-about svg {
+  max-width: 138px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* line 42, ../scss/_footer.scss */
+.footer-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 1em 0;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 42, ../scss/_footer.scss */
+  .footer-nav {
+    padding: 3em 0;
+  }
+}
+/* line 51, ../scss/_footer.scss */
+.footer-nav h3 {
+  font-size: 0.75em;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* line 1, ../scss/_off-canvas-nav.scss */
