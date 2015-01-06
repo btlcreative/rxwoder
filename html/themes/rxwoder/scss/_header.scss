@@ -23,7 +23,7 @@
         z-index: 9999;
         padding: 28px;
         svg path{
-            fill: $red;
+            fill: #FFF;
         }
     }
 
@@ -52,7 +52,7 @@
             float: right;
             li {
                 float: left;
-                
+
                 &.active {
                     a {
                         color: $red;
@@ -62,7 +62,7 @@
                             }
                         }
                     }
-    
+
                     .link-bg {
                         background-color: $beige;
                         width: 100%;
