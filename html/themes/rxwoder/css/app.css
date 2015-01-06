@@ -8153,9 +8153,11 @@ footer ul li a:hover {
 h1, h2, h3, h4 {
   font-weight: 900;
   font-family: "Russo One", "proxima-nova-extra-condensed", "HelveticaNeue-Regular, Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  margin-top: 0.1875rem;
+  margin-bottom: 0.5rem;
 }
 
-/* line 6, ../scss/_typography.scss */
+/* line 8, ../scss/_typography.scss */
 h2 {
   font-size: 3.0em;
   text-transform: uppercase;
@@ -8163,60 +8165,65 @@ h2 {
   line-height: 1em;
 }
 
-/* line 13, ../scss/_typography.scss */
+/* line 15, ../scss/_typography.scss */
 h3 {
   font-weight: 800;
   text-transform: uppercase;
   font-size: 1.25em;
   line-height: 1.2em;
 }
-/* line 18, ../scss/_typography.scss */
+/* line 20, ../scss/_typography.scss */
 h3.subheader {
   line-height: 1.2em;
 }
 
-/* line 23, ../scss/_typography.scss */
+/* line 25, ../scss/_typography.scss */
+ul, ol {
+  margin-top: 0;
+}
+
+/* line 29, ../scss/_typography.scss */
 p {
-  font-size: rem(18px);
-  line-height: rem(28px);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   font-family: "Open Sans", "HelveticaNeue-Regular, Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: #5e5e5e;
 }
-/* line 30, ../scss/_typography.scss */
+/* line 35, ../scss/_typography.scss */
 p.deck {
   font-size: 1.5rem;
   line-height: 1.875rem;
 }
 
-/* line 36, ../scss/_typography.scss */
+/* line 41, ../scss/_typography.scss */
 blockquote {
   border-left: 4px solid #E69D16;
   margin: 2em 0;
 }
-/* line 40, ../scss/_typography.scss */
+/* line 45, ../scss/_typography.scss */
 blockquote p {
   font-size: 1.5rem;
   line-height: 1.875rem;
   color: #E69D16;
   font-style: italic;
 }
-/* line 46, ../scss/_typography.scss */
+/* line 51, ../scss/_typography.scss */
 blockquote p:before {
   content: "\201C";
 }
-/* line 50, ../scss/_typography.scss */
+/* line 55, ../scss/_typography.scss */
 blockquote p:after {
   content: "\201D";
 }
 
-/* line 57, ../scss/_typography.scss */
+/* line 62, ../scss/_typography.scss */
 img.left {
   float: left;
   margin: 0 1.5em 0.5em 0;
   border-right: 5px solid #0d0d0d;
   border-bottom: 5px solid #0d0d0d;
 }
-/* line 64, ../scss/_typography.scss */
+/* line 69, ../scss/_typography.scss */
 img.right {
   float: right;
   margin: 0 0 0.5em 1.5em;
@@ -8250,7 +8257,7 @@ img.right {
     padding-top: 12em;
   }
 }
-/* line 23, ../scss/_feature-header.scss */
+/* line 22, ../scss/_feature-header.scss */
 .FeatureHeaderPage h2 {
   font-size: 5em;
   display: inline;
@@ -8258,25 +8265,25 @@ img.right {
   line-height: 1em;
   box-shadow: 10px 0 0 #FAF9F4, -10px 0 0 #FAF9F4;
 }
-/* line 30, ../scss/_feature-header.scss */
+/* line 29, ../scss/_feature-header.scss */
 .FeatureHeaderPage h2:after {
   content: " ";
   display: block;
   margin-bottom: 0.25em;
 }
 @media only screen and (max-width: 40em) {
-  /* line 23, ../scss/_feature-header.scss */
+  /* line 22, ../scss/_feature-header.scss */
   .FeatureHeaderPage h2 {
     font-size: 2.8em;
   }
 }
-/* line 41, ../scss/_feature-header.scss */
+/* line 40, ../scss/_feature-header.scss */
 .FeatureHeaderPage h3 {
   color: #FAF9F4;
   font-size: 1.4em;
 }
 @media only screen and (max-width: 40em) {
-  /* line 41, ../scss/_feature-header.scss */
+  /* line 40, ../scss/_feature-header.scss */
   .FeatureHeaderPage h3 {
     font-size: 1.2em;
   }

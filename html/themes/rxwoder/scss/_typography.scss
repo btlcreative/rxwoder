@@ -1,6 +1,8 @@
 h1, h2, h3, h4 {
 	font-weight: 900;
 	font-family: $header-font-family;
+	margin-top: rem-calc(3px);
+	margin-bottom: rem-calc(8px);
 }
 
 h2 {
@@ -20,10 +22,13 @@ h3 {
 	}
 }
 
-p {
+ul, ol {
+	margin-top: 0;
+}
 
-	font-size: rem(18px);
-	line-height: rem(28px);
+p {
+	font-size: rem-calc(18px);
+	line-height: rem-calc(28px);
 	font-family: $body-font-family;
 	color: $body-font-color;
 
