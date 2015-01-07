@@ -12,6 +12,8 @@
 	<meta property="og:title" content="$Title.ATT" />
 	<meta property="og:description" content="$MetaDescription.ATT" />
 	<meta property="og:url" content="$AbsoluteLink.ATT" />
+
+	<meta name="theme-color" content="#D8232A">
 	<% if $Image %>
 	<meta property="og:image" content="<% with $Image.SetSize(500,500) %>$AbsoluteURL.ATT<% end_with %>" />
 	<% end_if %>
